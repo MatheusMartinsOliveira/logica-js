@@ -1,9 +1,14 @@
 :root {
-  --cor-fundo: #FFFFFF;
-  --cor-texto: #1E2A38;
-  --cor-destaque: #E07A2E;
-  --cor-borda: #D9DDD3;
-  --cor-suave: #F4F5EF;
+--texto: #000000;
+  --link: #0056B3;
+  --suave: #E5E7EB;
+  --borda: #808080;
+  --ok-fundo: #E8F5E9;
+  --ok-texto: #1B5E20;
+  --alerta-fundo: #FFF8E1;
+  --alerta-texto: #6D4C00;
+  --erro-fundo: #FFEBEE;
+  --erro-texto: #8E1616;
 }
 
 .resultado,
@@ -13,6 +18,21 @@
   padding: 1rem;
   border-radius: 8px;
   border-left: 6px solid var(--cor-texto);
-  background: var(--cor-suave);
   white-space: pre-line;
 }
+
+.ok {
+    background: var(--ok-fundo);
+    color: var(--ok-texto);
+}
+
+.alerta {
+    background: var(--alerta-fundo);
+    color: var(--alerta-texto);
+}
+
+.erro {
+    background: var(--erro-fundo);
+    color: var(--erro-texto);
+}
+
